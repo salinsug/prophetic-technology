@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>prophetic.technology</title>
+<meta name="description" content="prophetic.technology">
+<style>
+  :root {
+    --ink: #12110f;
+    --paper: #f6f4ef;
+    --muted: #6b6660;
+    --rule: #ddd8cf;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f2efe9; --paper: #0e0d0c; --muted: #8f8880; --rule: #262320; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 16px/1.6 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 32rem; }
+  h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 1.25rem 0; }
+  p { margin: 0; color: var(--muted); }
+  .meta {
+    margin-top: 2rem;
+    font: 400 0.8125rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>prophetic.technology</h1>
+    <hr>
+    <p>Live. Deployed from GitHub via Vercel.</p>
+    <p class="meta">Edit index.html &middot; commit &middot; it ships</p>
+  </main>
+</body>
+</html>
